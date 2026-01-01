@@ -90,7 +90,7 @@ nav {
 }
 
 .mobile {
-  max-width: 400px;
+  max-width: 20%;
   margin-top: 80px;
   margin-bottom: 80px;
 }
@@ -257,6 +257,7 @@ h1 {
 
   h1 {
     font-size: 20px;
+    margin: 20px;
   }
 
   h2,

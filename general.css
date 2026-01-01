@@ -89,8 +89,36 @@ nav {
   position: relative;
 }
 
+.hero svg {
+  grid-area: 1/1;
+  margin-top: 650px;
+}
+/* 
+.hero svg {
+  position: absolute;
+  bottom: 40px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+} */
+
 .mobile {
-  max-width: 20%;
+  max-width: 250px;
+  width: 100%;
   margin-top: 80px;
   margin-bottom: 80px;
 }
@@ -129,12 +157,15 @@ h1 {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 40px;
   color: #ffd685;
 }
 
 .tema p {
   font-family: "Questrial", sans-serif;
   font-weight: 400;
+  font-size: 20px;
+  margin-top: 25px;
   font-style: normal;
   color: #f5f5f5;
 }
@@ -145,11 +176,12 @@ h1 {
   border-style: none;
   border-radius: 50px;
   border-width: 15px;
-  padding: 8px 16px 8px 16px;
-  margin: 30px 50px 20px 50px;
+  padding: 8px 25px 8px 25px;
+  margin: 30px 50px 20px 0px;
   font-family: "Questrial", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 15px;
 }
 
 .button-read:hover {
@@ -162,7 +194,7 @@ h1 {
   border-style: none;
   border-radius: 50px;
   border-width: 15px;
-  padding: 8px 16px 8px 16px;
+  padding: 8px 25px 8px 25px;
   font-family: "Questrial", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -255,6 +287,11 @@ h1 {
     max-width: 300px;
   }
 
+  .hero svg {
+    grid-area: 1/1;
+    margin-top: 200px;
+  }
+
   h1 {
     font-size: 20px;
     margin: 20px;
@@ -265,10 +302,43 @@ h1 {
     margin: 30px 50px 20px 50px;
   }
 
+  .tema h2 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #ffd685;
+  }
+
+  .tema p {
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #f5f5f5;
+  }
+
   .mobile {
     max-width: 40%;
     margin: 0 auto;
     margin-top: 60px;
     margin-bottom: 60px;
+  }
+
+  .button-read {
+    background-color: #ffd685;
+    border-color: #ffd685;
+    border-style: none;
+    border-radius: 50px;
+    border-width: 15px;
+    padding: 8px 16px 8px 16px;
+    margin: 30px 50px 20px 50px;
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  #button-read {
+    padding: 8px 25px 8px 25px;
   }
 }

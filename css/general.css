@@ -205,7 +205,7 @@ h1 {
   background-color: #e2be76;
 }
 
-#button-read {
+.button-footer {
   background-color: #ffd685;
   border-color: #ffd685;
   border-style: none;
@@ -367,7 +367,7 @@ h1 {
     background-color: #e2be76;
   }
 
-  #button-read {
+  .button-footer {
     padding: 8px 25px 8px 25px;
   }
 }

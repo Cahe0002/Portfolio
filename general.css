@@ -126,19 +126,10 @@ nav {
 }
 
 .desktup {
-  max-width: 400px;
+  max-width: 250px;
   width: 100%;
   margin-top: 80px;
   margin-bottom: 80px;
-}
-
-.link a {
-  color: #ffd685;
-  text-decoration: none;
-}
-
-.link a:hover {
-  color: #e2be76;
 }
 
 .hero img {
@@ -190,6 +181,10 @@ h1 {
 }
 
 .button-read {
+  display: inline-block;
+  text-decoration: none;
+  color: #000e25;
+  cursor: pointer;
   background-color: #ffd685;
   border-color: #ffd685;
   border-style: none;

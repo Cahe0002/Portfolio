@@ -151,7 +151,7 @@ nav {
   z-index: 2;
   justify-self: center; /* horizontal center */
   align-self: start; /* vertical start (top) */
-  margin-top: 130px; /* optional spacing from top */
+  margin-top: 110px; /* optional spacing from top */
 }
 
 h1 {
@@ -234,6 +234,14 @@ summary {
   font-size: 20px;
   text-align: center;
   color: #ffd685;
+}
+
+.info {
+  margin-top: 20px;
+  font-family: "Questrial", sans-serif;
+  color: #f5f5f5;
+  text-align: start;
+  font-size: 12px;
 }
 
 /* summary::after {
@@ -429,6 +437,10 @@ summary {
     background-color: #e2be76;
     transform: scale(1.08);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  summary {
+    margin: 30px 50px 20px 50px;
   }
 
   .button-footer {

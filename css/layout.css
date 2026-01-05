@@ -39,14 +39,6 @@
   padding: 0 30px;
 }
 
-.grid_1-1-1-1 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0px;
-  align-items: center;
-  margin-top: 80px;
-}
-
 .footer-grid {
   display: grid;
   place-items: center;
@@ -118,14 +110,16 @@
     gap: 20px;
   }
 
+  .grid_1-1-a {
+    grid-template-columns: 1fr;
+  }
+
   .grid_1-1-1-1 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0px;
     align-items: center;
-    margin: 10px auto;
-    max-width: 1400px;
-    padding: 0 30px;
+    padding: 0 80px;
   }
 
   .footer-grid svg {

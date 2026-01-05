@@ -5,9 +5,9 @@
   align-items: center;
   margin-left: 250px;
   margin-right: 250px;
-  animation: fade-in linear both;
-  animation-timeline: view(); /* Hver card tracker sin egen synlighed */
-  animation-range: entry 0% cover 60%;
+  /* animation: fade-in linear both; */
+  /* animation-timeline: view(); */
+  /* animation-range: entry 0% cover 60%; */
 }
 
 .grid_1-1:nth-of-type(even) {
@@ -18,7 +18,7 @@
   direction: ltr;
 }
 
-@keyframes fade-in {
+/* @keyframes fade-in {
   from {
     opacity: 0;
     translate: -50px 0;
@@ -27,7 +27,7 @@
     opacity: 1;
     translate: 0 0;
   }
-}
+} */
 
 .grid_1-1-1 {
   display: grid;
@@ -45,7 +45,6 @@
   gap: 0px;
   align-items: center;
   margin-top: 80px;
-  max-width: 1400px;
 }
 
 .footer-grid {

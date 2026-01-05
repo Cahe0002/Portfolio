@@ -5,9 +5,10 @@
   align-items: center;
   margin-left: 250px;
   margin-right: 250px;
-  animation: fade-in linear both;
-  animation-timeline: view(); /* Hver card tracker sin egen synlighed */
-  animation-range: entry 0% cover 60%;
+  margin-bottom: 100px;
+  /* animation: fade-in linear both; */
+  /* animation-timeline: view(); */
+  /* animation-range: entry 0% cover 60%; */
 }
 
 .grid_1-1:nth-of-type(even) {
@@ -18,7 +19,7 @@
   direction: ltr;
 }
 
-@keyframes fade-in {
+/* @keyframes fade-in {
   from {
     opacity: 0;
     translate: -50px 0;
@@ -27,7 +28,7 @@
     opacity: 1;
     translate: 0 0;
   }
-}
+} */
 
 .grid_1-1-1 {
   display: grid;
@@ -39,9 +40,12 @@
   padding: 0 30px;
 }
 
-.grid_1-1-1-1 {
+.grid-1 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .footer-grid {
@@ -83,6 +87,13 @@
   .grid_1-1 {
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 50px;
+  }
+
+  .grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 50px;
   }
 
   .footer-grid {
@@ -104,12 +115,30 @@
     grid-template-columns: 1fr;
     gap: 0px;
     margin: 0px;
+    animation: none;
+    animation-timeline: none; /* Hver card tracker sin egen synlighed */
+    animation-range: none;
+    margin-bottom: 50px;
   }
 
   .grid_1-1-1 {
     display: flex;
     padding: 0 20px;
     gap: 20px;
+  }
+
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+    align-items: center;
+    padding: 0 80px;
+  }
+
+  .grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px 40px;
   }
 
   .footer-grid svg {

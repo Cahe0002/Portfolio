@@ -227,49 +227,37 @@ h1 {
 
 details {
   border: 1px solid #e0e0e0;
-  border-radius: 8px;
+  border-radius: 50px;
   padding: 10px;
   background: #fff;
   transition: all 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-details:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
-}
-
 summary {
   cursor: pointer;
+  font-family: "DM Serif Display", serif;
   font-weight: 600;
   font-size: 16px;
   color: #000e25;
   text-align: center;
   line-height: 1.5;
   list-style: none;
-  user-select: none;
-}
-
-summary::-webkit-details-marker {
-  display: none;
 }
 
 summary:hover {
   color: #ffd685;
 }
-
 .info {
-  max-width: 400px;
+  font-family: "Questrial", sans-serif;
   margin: 20px auto 0;
-  padding-top: 16px;
+  margin: 25px;
+  margin-bottom: 20px;
+  padding-top: 20px;
   border-top: 1px solid #f5f5f5;
   color: #000e25;
   line-height: 1.7;
   animation: fadeIn 0.3s ease;
-}
-
-details:not([open]) .info {
-  display: none;
 }
 
 .button-footer {
@@ -422,7 +410,6 @@ details:not([open]) .info {
     margin-top: 60px;
     margin-bottom: 60px;
   }
-
   .button-read {
     display: block;
     background-color: #ffd685;

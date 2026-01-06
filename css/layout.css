@@ -28,6 +28,12 @@
   justify-items: center; /* Center SVGs in their grid cells */
 }
 
+.arrow-up {
+  display: grid;
+  grid-area: 1/1;
+  margin-bottom: 250px;
+}
+
 .grid-1-1-svg svg:hover {
   fill: #ffd685;
 }

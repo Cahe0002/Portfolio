@@ -404,6 +404,7 @@ summary:hover {
     flex: 3;
     display: flex;
     margin-left: 20px;
+    margin-right: 5px;
     justify-content: flex-end;
     font-family: "Questrial", sans-serif;
     font-weight: 400;
@@ -424,6 +425,10 @@ summary:hover {
     max-width: 125px;
     width: 100%;
     margin-left: 11px;
+  }
+
+  .logo-svg {
+    height: 30px;
   }
 
   .hero h1 {

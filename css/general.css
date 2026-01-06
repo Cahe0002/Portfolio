@@ -5,6 +5,7 @@ body {
 header {
   display: flex;
   width: 100%;
+  justify-content: center;
   max-width: 100%;
   align-items: center;
   background-color: transparent;
@@ -23,6 +24,7 @@ nav {
   margin-top: 20px;
   align-items: center;
   justify-content: center;
+  margin-right: 70px;
   font-family: "Questrial", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -47,16 +49,14 @@ nav {
   color: #ffd685;
 }
 
-.logo {
-  display: flex;
-  justify-items: flex-start;
-  margin-left: 10px;
-  margin-top: 10px;
-  height: 40px;
+.logo-svg {
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 50px;
   width: auto;
 }
 
-.logo path {
+.logo-svg path {
   fill: #ffd685;
 }
 

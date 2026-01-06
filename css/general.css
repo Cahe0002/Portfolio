@@ -161,12 +161,83 @@ h1 {
   color: #ffd685;
 }
 
-.tema h2 {
+h2 {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 40px;
   color: #ffd685;
+}
+
+h3 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #ffd685;
+}
+
+.send {
+  border: 1px solid #000;
+  background-color: #ffd685;
+  color: #000e25;
+  border-radius: 12px;
+  padding: 0.4rlh 0.1rlh;
+  cursor: pointer;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+form {
+  accent-color: #000e25;
+  color: #ffd685;
+}
+
+form {
+  display: grid;
+  gap: 1rlh;
+  padding: 1rlh;
+
+  .form-group {
+    display: grid;
+    gap: 0.5rlh;
+  }
+
+  label:has(input) {
+    display: flex;
+    align-items: center;
+    gap: 0.25rlh;
+    justify-self: start;
+  }
+}
+
+option {
+  background-color: #ffd685;
+}
+
+label {
+  font-family: "Orbitron", sans-serif;
+}
+
+input {
+  border: 1px solid #ccc;
+  padding: 0.5rlh;
+  border-radius: 2px;
+  box-shadow: 0px 1px 2px #0001;
+}
+
+input label {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin: 8px;
+}
+
+.error-message {
+  display: none;
+  color: #a61414;
+  font-family: "Alegreya Sans", sans-serif;
 }
 
 .tema p {
@@ -410,6 +481,11 @@ summary:hover {
     margin-top: 60px;
     margin-bottom: 60px;
   }
+
+  .form-group {
+    margin: 20px;
+  }
+
   .button-read {
     display: block;
     background-color: #ffd685;

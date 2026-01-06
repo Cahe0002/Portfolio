@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tema 2</title>
+  </head>
+  <body>
+    <header>
+      <div id="top"></div>
+      <div class="logo">
+        <a href="index.html" aria-label="Index"> </a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Projekter</a></li>
+          <li><a href="om.html">Om</a></li>
+          <li><a href="index.html">Kontakt</a></li>
+        </ul>
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <img src="img/index_hero.webp" alt="" />
+        <h1>Kontakt</h1>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="37"
+          height="21"
+          viewBox="0 0 37 21"
+          fill="none"
+        >
+          <path
+            d="M18.9143 17.5002L17.5001 18.9144L-0.000151038 1.41421L1.41406 0L18.9143 17.5002Z"
+            fill="#F5F5F5"
+          />
+          <path
+            d="M36.4143 2.82823L35.0001 1.41401L17.4998 18.9142L18.9141 20.3284L36.4143 2.82823Z"
+            fill="#F5F5F5"
+          />
+        </svg>
+      </section>
+      <section id="form-section">
+        <form aria-label="Kontaktformular">
+          <div class="form-group">
+            <label for="name">Navn</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              aria-describedby="name_error"
+              required
+            />
+            <p class="error-message" id="name_error">Please enter a value</p>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              aria-describedby="email-error"
+              required
+            />
+            <p class="error-message" id="name-error">Please enter a value</p>
+          </div>
+          <div class="form-group">
+            <label for="text">Emne</label>
+            <input
+              type="text"
+              id="topic"
+              name="topic"
+              aria-describedby="topic-error"
+              required
+            />
+            <p class="error-message" id="name-error">Please enter a value</p>
+          </div>
+          <!-- <div class="form-group">
+            <textarea name="message" id="message"></textarea>
+          </div> -->
+          <div class="form-group">
+            <label for="accept_terms">
+              <input
+                type="checkbox"
+                id="accept_terms"
+                name="accept_terms"
+                value="yes"
+                aria-describedby="terms-error"
+                required
+              />
+              Accept terms
+            </label>
+            <p class="error-message" id="terms-error">Please tick the box</p>
+          </div>
+          <button class="send">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer-grid">
+      <img src="img/footer.webp" alt="footer" class="footer-img" />
+      <button class="button-footer">Følg for mere</button>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="129"
+        height="48"
+        viewBox="0 0 129 48"
+        fill="none"
+      >
+        <a href="https://www.instagram.com/carolineschytte/" target="_blank">
+          <path
+            d="M13.8316 0C6.20431 0 0 6.21006 0 13.8393V33.6043C0 41.2316 6.21006 47.4359 13.8393 47.4359H33.6043C41.2316 47.4359 47.4359 41.2258 47.4359 33.5966V13.8316C47.4359 6.20431 41.2258 0 33.5966 0H13.8316ZM37.5534 7.90598C38.6444 7.90598 39.5299 8.79145 39.5299 9.88248C39.5299 10.9735 38.6444 11.859 37.5534 11.859C36.4624 11.859 35.5769 10.9735 35.5769 9.88248C35.5769 8.79145 36.4624 7.90598 37.5534 7.90598ZM23.7179 11.859C30.2582 11.859 35.5769 17.1777 35.5769 23.7179C35.5769 30.2582 30.2582 35.5769 23.7179 35.5769C17.1777 35.5769 11.859 30.2582 11.859 23.7179C11.859 17.1777 17.1777 11.859 23.7179 11.859ZM23.7179 15.812C21.6212 15.812 19.6102 16.6449 18.1276 18.1276C16.6449 19.6102 15.812 21.6212 15.812 23.7179C15.812 25.8147 16.6449 27.8257 18.1276 29.3083C19.6102 30.791 21.6212 31.6239 23.7179 31.6239C25.8147 31.6239 27.8257 30.791 29.3083 29.3083C30.791 27.8257 31.6239 25.8147 31.6239 23.7179C31.6239 21.6212 30.791 19.6102 29.3083 18.1276C27.8257 16.6449 25.8147 15.812 23.7179 15.812Z"
+            fill="#F5F5F5"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/caroline-schytte-69241b165/"
+          target="_blank"
+        >
+          <path
+            d="M124.636 0H85.3636C82.9527 0 81 1.95273 81 4.36364V43.6364C81 46.0473 82.9527 48 85.3636 48H124.636C127.047 48 129 46.0473 129 43.6364V4.36364C129 1.95273 127.047 0 124.636 0ZM96.1724 39.2727H89.736V18.5629H96.1724V39.2727ZM92.8887 15.6022C90.8138 15.6022 89.136 13.92 89.136 11.8495C89.136 9.77891 90.816 8.09891 92.8887 8.09891C94.9571 8.09891 96.6393 9.78109 96.6393 11.8495C96.6393 13.92 94.9571 15.6022 92.8887 15.6022ZM120.281 39.2727H113.849V29.2015C113.849 26.7993 113.806 23.7098 110.505 23.7098C107.156 23.7098 106.641 26.3258 106.641 29.0269V39.2727H100.209V18.5629H106.383V21.3927H106.471C107.33 19.7651 109.429 18.048 112.56 18.048C119.077 18.048 120.281 22.3375 120.281 27.9142V39.2727Z"
+            fill="#F5F5F5"
+          />
+        </a>
+      </svg>
+    </footer>
+    <script src="js/burgermenu.js"></script>
+    <script src="js/hero.js"></script>
+  </body>
+</html>

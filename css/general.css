@@ -50,8 +50,14 @@ nav {
 .logo {
   display: flex;
   justify-items: flex-start;
-  height: 60px;
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 40px;
   width: auto;
+}
+
+.logo path {
+  fill: #ffd685;
 }
 
 .burger {
@@ -332,12 +338,9 @@ summary:hover {
 }
 
 .button-footer {
-  background-color: #ffd685;
-  border-color: #ffd685;
-  border-style: none;
-  border-radius: 50px;
+  color: #f5f5f5;
+  margin-top: 25px;
   border-width: 15px;
-  padding: 8px 25px 8px 25px;
   font-family: "Questrial", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -494,6 +497,7 @@ summary:hover {
     padding: 8px 16px;
     margin: 30px 50px 20px 50px;
     font-family: "Questrial", sans-serif;
+    font-size: 14px;
     font-weight: 400;
     font-style: normal;
     color: #0a1628;
@@ -501,6 +505,10 @@ summary:hover {
     display: inline-block;
     cursor: pointer;
     transition: background-color 0.3s;
+  }
+
+  .button-footer {
+    margin-top: 10px;
   }
 
   .button-read:hover {

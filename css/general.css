@@ -2,6 +2,14 @@ body {
   background-color: #000e25;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#top {
+  scroll-margin-top: 80px; /* height of your header */
+}
+
 header {
   display: flex;
   width: 100%;
@@ -86,16 +94,13 @@ nav {
 }
 
 .hero svg {
-  grid-area: 1/1;
-  margin-top: 650px;
-}
-
-.hero svg {
   position: absolute;
   bottom: 110px;
   animation: bounce 5s infinite;
   width: 42px;
   height: auto;
+  grid-area: 1/1;
+  margin-top: 650px;
 }
 
 @keyframes bounce {
@@ -370,6 +375,7 @@ summary:hover {
   .menu a:hover {
     color: #f5f5f5;
   }
+
   .burger {
     display: block;
     background-color: transparent;

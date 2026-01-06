@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
       rel="stylesheet"
     />
-    <title>Tema 3</title>
+    <title>Tema 2</title>
   </head>
   <body>
     <header>
@@ -30,7 +30,7 @@
         <ul class="menu">
           <li><a href="index.html">Projekter</a></li>
           <li><a href="om.html">Om</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="index.html">Kontakt</a></li>
         </ul>
         <button class="burger">
           <span class="line"></span>
@@ -41,11 +41,8 @@
     </header>
     <main>
       <section class="hero">
-        <img src="img/index_hero.webp" alt="hero" />
-        <h1>
-          Tema 5 - <br />
-          Grundlæggende indhold
-        </h1>
+        <img src="img/index_hero.webp" alt="" />
+        <h1>Kontakt</h1>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="37"
@@ -63,83 +60,60 @@
           />
         </svg>
       </section>
-      <section class="grid_1-1">
-        <img src="img/chiba_site.webp" alt="chiba_site" class="desktup" />
-        <div class="tema">
-          <h2>Løsning</h2>
-          <p>
-            Løsningen blev til et nyt redesign af Chiba hjemmesiden. Formålet
-            var at gøre det nemmere at finde rundt og have mere om konceptet.
-          </p>
-
-          <a
-            href="https://chiba-redesign.github.io/chibasite/"
-            target="_blank"
-            class="button-read"
-            >Chiba
-          </a>
-        </div>
-      </section>
-      <section class="grid_1-1">
-        <img src="img/chiba_website.webp" alt="oldchiba" class="desktup" />
-        <div class="tema">
-          <h2>Proces</h2>
-          <p>
-            Processen gik ud på at redesigne en eksisterende hjemmeside og
-            samarbejde i grupper. Vi planlagde at lave content på restauranten
-            med interview og billeder.
-          </p>
-          <a
-            href="https://www.figma.com/design/xzsho0p4Lvg7uGAfWubA8m/CHIBA-redesign?node-id=378-16&t=vlJzVhTw3nequw6H-1"
-            target="_blank"
-            class="button-read"
-            >Figma
-          </a>
-        </div>
-      </section>
-      <section class="grid_1-1">
-        <img src="img/content_chiba.webp" alt="website2" class="desktup" />
-        <div class="tema">
-          <h2>Læring</h2>
-          <p>
-            Processen var at lave opgaven Sæt indhold i HTML. Bagefter gik man
-            efter layoutdiagrammet og wireframe vi havde fået udleveret. Der
-            skulle øves en masse på grid med fr.
-          </p>
-        </div>
-      </section>
-      <section class="grid_1-1">
-        <a href="https://www.youtube.com/watch?v=4gHEjrO9rg8" target="_blank">
-          <img
-            src="img/vintereventyr.webp"
-            alt="vintereventyr"
-            class="desktup"
-          />
-        </a>
-        <div class="tema">
-          <h2>Et vintereventyr</h2>
-          <p>
-            Processen gik ud på at redesigne en eksisterende hjemmeside og
-            samarbejde i grupper. Vi planlagde at lave content på restauranten
-            med interview og billeder.
-          </p>
-          <a
-            href="https://www.youtube.com/watch?v=4gHEjrO9rg8"
-            target="_blank"
-            class="button-read"
-            >Video
-          </a>
-        </div>
-      </section>
-      <section class="grid_1-1-1">
-        <a href="tema2.html" class="button-tema">Tema 2 </a>
-        <a href="tema3.html" class="button-tema">Tema 3 </a>
-        <a
-          href="https://cahe0002.github.io/02.01.02-Website/index.html"
-          target="_blank"
-          class="button-tema"
-          >Tema 5
-        </a>
+      <section id="form-section">
+        <form aria-label="Kontaktformular">
+          <div class="form-group">
+            <label for="name">Navn</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              aria-describedby="name_error"
+              required
+            />
+            <p class="error-message" id="name_error">Please enter a value</p>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              aria-describedby="email-error"
+              required
+            />
+            <p class="error-message" id="name-error">Please enter a value</p>
+          </div>
+          <div class="form-group">
+            <label for="text">Emne</label>
+            <input
+              type="text"
+              id="topic"
+              name="topic"
+              aria-describedby="topic-error"
+              required
+            />
+            <p class="error-message" id="name-error">Please enter a value</p>
+          </div>
+          <!-- <div class="form-group">
+            <textarea name="message" id="message"></textarea>
+          </div> -->
+          <div class="form-group">
+            <label for="accept_terms">
+              <input
+                type="checkbox"
+                id="accept_terms"
+                name="accept_terms"
+                value="yes"
+                aria-describedby="terms-error"
+                required
+              />
+              Accept terms
+            </label>
+            <p class="error-message" id="terms-error">Please tick the box</p>
+          </div>
+          <button>Send</button>
+        </form>
       </section>
     </main>
     <footer class="footer-grid">

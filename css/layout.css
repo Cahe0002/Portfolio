@@ -6,9 +6,6 @@
   margin-left: 250px;
   margin-right: 250px;
   margin-bottom: 100px;
-  /* animation: fade-in linear both; */
-  /* animation-timeline: view(); */
-  /* animation-range: entry 0% cover 60%; */
 }
 
 .grid_1-1:nth-of-type(even) {
@@ -25,13 +22,13 @@
   gap: 20px;
   max-width: 1200px;
   margin: 200px auto;
-  justify-items: center; /* Center SVGs in their grid cells */
+  justify-items: center;
 }
 
 .arrow-up {
   display: block;
   width: fit-content;
-  margin: 60px auto 120px; /* top, left/right (auto centers), bottom */
+  margin: 60px auto 120px;
   transition: all 0.3s ease;
   animation: bounce 5s infinite;
 }
@@ -55,17 +52,6 @@
 .grid-1-1-svg svg:hover {
   fill: #ffd685;
 }
-
-/* @keyframes fade-in {
-  from {
-    opacity: 0;
-    translate: -50px 0;
-  }
-  to {
-    opacity: 1;
-    translate: 0 0;
-  }
-} */
 
 .grid_1-1-1 {
   display: grid;
@@ -120,9 +106,6 @@
     grid-template-columns: 1fr;
     gap: 0px;
     margin: 0px;
-    animation: none;
-    animation-timeline: none; /* Hver card tracker sin egen synlighed */
-    animation-range: none;
     margin-bottom: 50px;
   }
 
